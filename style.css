@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li{
+    float: right;
+    
+}
+li a{
+    display: block;
+    justify-content: space-around;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px 20px;
+    padding-top: 20px;
+
+}
+
+body{
+    background-color:hsl(218, 28%, 13%);
+    color: antiquewhite;
+    font-family: sans-serif;
+    
+}
+.firstsection{
+    text-align: center;
+    align-items: center;
+    
+}
+
+button{
+    background-color: aqua;
+    color: azure;
+    width: 15em;;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;;
+}
+
+.secondsection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 94px 150px;
+    margin: 130px 0;
+    padding: 0 280px;
+}
+
+.thirdsection{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0  100px;
+}
+
+.flex-container {
+    display: flex;
+    background-color:hsl(217, 40%, 26%);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    padding: 140px;
+}
+.testimonial{
+    background-color:hsl(217, 48%, 18%);
+    padding: 45px 40px;
+    border-radius: 5px;
+    position: relative;
+}
+.testimonial:first-child::before{
+content: url("images/bg-quotes.png");
+position: absolute;
+top: -35px;
+left: -15;
+z-index: -1;
+}
+
+.testimonial p{
+    margin-bottom: 25px;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile img{
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main{
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.sign-up{
+    background-color: hsl(217, 74%, 12%);
+    padding: 50px 74px 40px 74px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.sign-up h2{
+    margin-bottom: 30px;
+}
+
+.sign-up p{
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+input[type="email"]{
+    width: 482px;
+    height: 50px;
+    padding: 20px 47px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-right: 20px;
+    color: black;
+}
+
+input[type="submit"]{
+    background-color:rgb(127, 219, 255);
+    color: whitesmoke;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius:20px;
+    margin: 0;
+}
+
+::placeholder{
+    opacity: 0.4;
+
+}
+
+header img{
+    padding: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    background-color:hsl(217, 56%, 8%);
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.footer-links a{
+    padding: 7px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-more-links{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+
+}
+
+.footer-more-links a{
+    padding: 7px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 800px){
+
+}
+    
+.sign-up{
+    height: 50px;
+
+}
